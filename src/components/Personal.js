@@ -8,7 +8,8 @@ export default class Personal extends Component {
 
 	render() {
         return (
-            <div className="Personal">
+            <div className="personal">
+                <h3> Personal Details</h3>
             </div>
         )
     }

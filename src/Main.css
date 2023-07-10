@@ -1,5 +1,8 @@
 .main {
-    padding: 10px;
+    padding-top: 0;
 	background-color: rgb(230, 230, 230);
-    padding-bottom: 500px;
+    height: 85%;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+
 }

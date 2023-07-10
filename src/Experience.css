@@ -1,0 +1,11 @@
+.experience {
+    padding: 10px;
+    padding-left: 30px;
+    width: 80%;
+    height: 100%;
+}
+
+.experience h4 {
+    font-size: 2rem;
+    text-decoration: underline;
+}
