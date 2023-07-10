@@ -4,6 +4,5 @@
 }
 
 .personal h3 {
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }

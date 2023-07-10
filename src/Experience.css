@@ -1,11 +1,23 @@
 .experience {
-    padding: 10px;
     padding-left: 30px;
     width: 80%;
     height: 100%;
 }
 
 .experience h4 {
+    margin-top: 20px;
     font-size: 2rem;
     text-decoration: underline;
+    margin-bottom: 5px;
 }
+
+.experience p {
+    margin-bottom: 10px;
+}
+
+.job, .course {
+    border: 1px solid blue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+

@@ -18,7 +18,6 @@ export default class NameInput extends Component {
         const {currentName, type} = this.props
         return (
             <form onSubmit={this.handleSubmit}>
-                <label htmlFor="name"></label>
                 <input id={type + "Input"} className="input" type="text" defaultValue={currentName}></input>
                 <button className="submitBtn" type="submit">Submit</button>
             </form>

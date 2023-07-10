@@ -1,21 +1,46 @@
 import React, { Component } from "react";
+import Job from "./Job";
+import uniqid from "uniqid";
 
 export default class WorkExperience extends Component {
 	constructor() {
 		super();
+
+		this.state = {
+			jobs: [<Job key={uniqid()} />],
+		};
+
+		this.addJob = this.addJob.bind(this);
+		this.deleteJob = this.deleteJob.bind(this);
+	}
+
+	addJob() {
+        if (this.state.jobs.length >= 5) return;
+		this.setState({
+			jobs: [...this.state.jobs, <Job key={uniqid()} />],
+		});
+	}
+
+	deleteJob() {
+		if (this.state.jobs.length === 1) return;
+		this.setState({
+			jobs: this.state.jobs.slice(0, -1),
+		});
 	}
 
 	render() {
 		return (
 			<div className="workExperience">
 				<h4> Work Experience </h4>
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-                    deserunt mollit anim id est laborum. </p>
+				{this.state.jobs}
+				<div className="buttons">
+				    {this.state.jobs.length < 5 && (
+						<button onClick={this.addJob}> Add </button>
+					)}
+					{this.state.jobs.length > 1 && (
+						<button onClick={this.deleteJob}> Delete </button>
+					)}
+				</div>
 			</div>
 		);
 	}

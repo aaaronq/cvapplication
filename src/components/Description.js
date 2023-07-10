@@ -1,22 +1,48 @@
 import React, { Component } from "react";
+import Input from './Input'
 
 export default class Description extends Component {
 	constructor() {
 		super();
+
+        this.state = {
+            updating: false,
+            description: "Click here to add a description"
+        }
+        
+        this.updateDescription = this.updateDescription.bind(this);
+        this.changeDescription = this.changeDescription.bind(this);
+
 	}
+
+    updateDescription() {
+        this.setState({
+            updating: true,
+        })
+    }
+
+    changeDescription(description) {
+        this.setState({
+            updating: false,
+            description: description,
+        })
+    }
 
 	render() {
 		return (
 			<div className="description">
 				<h4> Description </h4>
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-                    deserunt mollit anim id est laborum.
-                </p>
+                {this.state.updating === true ? (
+                    <Input
+                    currentName={this.state.description}
+                    changeName={this.changeDescription}
+                    type="Description"
+                    />
+                ) : (
+				    <p onClick={this.updateDescription}>
+                        {this.state.description}
+                    </p>
+                )}
 			</div>
 		);
 	}
