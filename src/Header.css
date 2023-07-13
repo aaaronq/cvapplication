@@ -7,14 +7,9 @@
 }
 
 .headerInfo {
-    padding-left: 15px;
+    padding-left: 10px;
     margin-right: auto;
-    font-size: 30px;
-}
-
-img, input[type="image"] {
-    width: 150px;
-    padding-right: 15px;
+    font-size: 2rem;
 }
 
 input[type="file"] {
@@ -22,14 +17,14 @@ input[type="file"] {
 }
 
 header {
-    padding: 15px;
+    padding: 10px;
     background-color: lightblue;
     /* border: 1px solid red; */
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
     display: flex;
     justify-content: center;
     width: 100%;
-    max-height: 300px;
+    max-height: 200px;
 }
 
 #NameInput {
@@ -38,12 +33,49 @@ header {
 }
 
 .submitBtn {
-    padding: 10px;
+    padding: 5px;
     margin: 2px;
-    margin-left: 10px;
+    margin-left: 5px;
+    font-size: 14px;
     cursor: pointer;
 }
 
 #profilePic {
     cursor: pointer;
+    width: 150px;
+    height: 150px;
+    padding-right: 15px;
+}
+
+@media (max-width: 720px) {
+    .headerInfo {
+        font-size: 1.1rem;
+      }
+
+    #NameInput {
+      font-size: 1em;
+      max-width: 300px;
+    }
+
+    #profilePic {
+        width: 90px;
+        height: 75px;
+    }
+  }
+
+@media (min-width: 900) and (max-width: 1920px) {
+    .headerInfo {
+      font-size: 1.75rem; 
+    }
+  
+    #NameInput {
+      font-size: 1.2em; 
+      max-width: 400px; 
+    }
+  
+    .submitBtn {
+      padding: 5px; 
+      margin: 1px; 
+      margin-left: 5px; 
+    }
 }

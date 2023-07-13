@@ -13,8 +13,43 @@
     padding: 5px;
 }
 
-
 .buttons button {
     padding: 10px;
     margin-right: 10px;
 }
+
+
+@media (max-width: 1920px) {
+    .input,
+    .dateInput {
+      width: auto; 
+    }
+  
+    .buttons button {
+      padding: 10px; 
+      margin-right: 10px; 
+    }
+  }
+
+@media (max-width: 900px) {
+    .main {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+
+    .experience {
+        width: 100%;
+    }
+  
+    .input,
+    .dateInput {
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+  
+    .buttons button {
+      padding: 5px;
+      margin-right: 5px;
+    }
+  }

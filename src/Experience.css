@@ -2,6 +2,7 @@
     padding-left: 30px;
     width: 80%;
     height: 100%;
+    font-size: 1rem;
 }
 
 .experience h4 {
@@ -35,3 +36,36 @@
     line-height: 1.5;
 }
 
+@media (max-width: 900px) {
+    .experience {
+      font-size: 0.75rem;
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .experience h4 {
+      margin-top: 0px;
+      font-size: 1.5rem;
+    }
+  
+    #DescriptionInput {
+      font-size: 1rem;
+      width: 100%;
+    }
+  }
+
+@media (min-width: 1920px) {
+    .experience {
+      width: 70%; 
+    }
+  
+    .job,
+    .course {
+      grid-template-columns: 1fr 1fr; 
+    }
+  
+    #DescriptionInput {
+      font-size: 0.9em; 
+      width: 80%; 
+    }
+  }

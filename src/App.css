@@ -9,11 +9,13 @@
 }
 
 #root {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+    background-size: cover;
 }
 
 .cv {
@@ -46,3 +48,21 @@
     transform: scale(0.95);
 }
 
+@media (max-width: 900px) {
+    .cv {
+      width: 90%;
+      height: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    #pdfButton {
+      font-size: 1.5rem;
+    }
+  }
+
+@media (min-width: 901px) and (max-width: 1200px) {
+    .cv {
+      width: 70%; 
+    }
+  }
