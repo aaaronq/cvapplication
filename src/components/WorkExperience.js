@@ -15,7 +15,7 @@ export default class WorkExperience extends Component {
 	}
 
 	addJob() {
-        if (this.state.jobs.length >= 5) return;
+        if (this.state.jobs.length >= 3) return;
 		this.setState({
 			jobs: [...this.state.jobs, <Job key={uniqid()} />],
 		});
@@ -33,8 +33,8 @@ export default class WorkExperience extends Component {
 			<div className="workExperience">
 				<h4> Work Experience </h4>
 				{this.state.jobs}
-				<div className="buttons">
-				    {this.state.jobs.length < 5 && (
+				<div className="buttons" data-html2canvas-ignore>
+				    {this.state.jobs.length < 3 && (
 						<button onClick={this.addJob}> Add </button>
 					)}
 					{this.state.jobs.length > 1 && (

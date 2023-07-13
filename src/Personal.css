@@ -1,8 +1,20 @@
 .personal {
-    padding-top: 10px;
+    padding: 15px;
     background-color: #d9d9d9;
+    text-align: center;
 }
 
 .personal h3 {
+    margin-top: 5px;
     text-align: center;
+    text-decoration: underline;
+}
+
+.personal h4 {
+    margin-top: 30px;
+}
+
+.personal p {
+    white-space:normal;
+    word-break: break-all;
 }

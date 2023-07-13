@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export default class NameInput extends Component {
+export default class Input extends Component {
 	constructor(props) {
 		super(props);
 
@@ -19,7 +19,7 @@ export default class NameInput extends Component {
         return (
             <form onSubmit={this.handleSubmit}>
                 <input id={type + "Input"} className="input" type="text" defaultValue={currentName}></input>
-                <button className="submitBtn" type="submit">Submit</button>
+                <button className="submitBtn" type="submit" data-html2canvas-ignore>Submit</button>
             </form>
         )
     }

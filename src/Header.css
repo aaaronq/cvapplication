@@ -49,3 +49,7 @@ header {
     margin-left: 10px;
     cursor: pointer;
 }
+
+#profilePic {
+    cursor: pointer;
+}

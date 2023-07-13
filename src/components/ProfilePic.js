@@ -27,8 +27,8 @@ export default class ProfilePic extends Component {
 	render() {
 		return (
 			<>
-				<input
-					type="image"
+				<img
+					id="profilePic"
 					onClick={this.updateImage}
 					src={this.state.imgurl}
 					alt="Profile"
