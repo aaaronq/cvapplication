@@ -5,7 +5,7 @@ export default class ProfilePic extends Component {
 		super(props);
 
 		this.state = {
-			imgurl: "/assets/images/blankprofilepic.jpg",
+			imgurl: "./assets/images/blankprofilepic.jpg",
 		};
 
 		this.updateImage = this.updateImage.bind(this);
