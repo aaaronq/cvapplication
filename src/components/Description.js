@@ -7,7 +7,12 @@ export default class Description extends Component {
 
         this.state = {
             updating: false,
-            description: "In this episode, I explain the biology of breathing (respiration), how it delivers oxygen and carbon dioxide to the cells and tissues of the body and how is best to breathe—nose versus mouth, fast versus slow, deliberately versus reflexively, etc., depending on your health and performance needs. I discuss the positive benefits of breathing properly for mood, to reduce psychological and physiological stress, to halt sleep apnea, and improve facial aesthetics and immune system function. I also compare what is known about the effects and effectiveness of different breathing techniques, including physiological sighs, box breathing and cyclic hyperventilation, “Wim Hof Method,” Prānāyāma yogic breathing and more. "
+            description:  `This is where you enter your description. This can go up to 750 characters or approximately 110-190 words.\
+            Use this space to give a general impression of where you are in your career path. For example, if you are a recent graduate\
+            or have relevant practical experience. If you're a recent graduate, you can include relevant information about your degree.\
+            If you are currently unemployed, you can mention your previous employment and educational attainment. I have now ran out of\
+            sample text to put here. Stack Overflow is a question-and-answer website for programmers.\ 
+            It was created in 2008 by Jeff Atwood and Joel Spolsky.`
         }
         
         this.updateDescription = this.updateDescription.bind(this);
@@ -39,7 +44,7 @@ export default class Description extends Component {
                     type="Description"
                     />
                 ) : (
-				    <p onClick={this.updateDescription}>
+				    <p id="description" onClick={this.updateDescription}>
                         {this.state.description}
                     </p>
                 )}

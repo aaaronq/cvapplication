@@ -32,13 +32,6 @@ header {
     max-height: 300px;
 }
 
-.input {
-    border: 2px solid green;
-    border-radius: 5px;
-    padding: 10px;
-    font-weight: bolder;
-}
-
 #NameInput {
     font-size: 1.5em;
     max-width: 500px;
@@ -46,6 +39,7 @@ header {
 
 .submitBtn {
     padding: 10px;
+    margin: 2px;
     margin-left: 10px;
     cursor: pointer;
 }

@@ -7,7 +7,7 @@ export default class Address extends Component {
 
         this.state = {
             updating: false,
-            address: "308 Negra Arroyo Lane"
+            address: "Address"
         }
 
         this.updateAddress = this.updateAddress.bind(this);

@@ -18,7 +18,11 @@ export default class Input extends Component {
         const {currentName, type} = this.props
         return (
             <form onSubmit={this.handleSubmit}>
-                <input id={type + "Input"} className="input" type="text" defaultValue={currentName}></input>
+                <input id={type + "Input"}
+                className="input" type="text" 
+                defaultValue={currentName}
+                data-html2canvas-ignore
+                />
                 <button className="submitBtn" type="submit" data-html2canvas-ignore>Submit</button>
             </form>
         )

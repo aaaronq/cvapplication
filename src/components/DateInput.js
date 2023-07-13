@@ -17,8 +17,8 @@ export default class DateInput extends Component {
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
-                <input type="date"/>
-                <button type="submit">Submit</button>
+                <input type="date" className="dateInput" data-html2canvas-ignore/>
+                <button type="submit" className="submitBtn" data-html2canvas-ignore>Submit</button>
             </form>
         )
     }

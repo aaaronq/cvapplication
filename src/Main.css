@@ -6,3 +6,15 @@
     grid-template-columns: 4fr 1fr;
     overflow: auto;
 }
+
+.input, .dateInput {
+    border: 2px solid green;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+.buttons button {
+    padding: 10px;
+    margin-right: 10px;
+}

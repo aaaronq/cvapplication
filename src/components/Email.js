@@ -7,7 +7,7 @@ export default class Email extends Component {
 
         this.state = {
             updating: false,
-            email: "aaronquigley24@gmail.com"
+            email: "Email"
         }
 
         this.updateEmail = this.updateEmail.bind(this);
@@ -39,7 +39,7 @@ export default class Email extends Component {
                     currentName={this.state.email}
                     />
                 ) : (
-                    <p onClick={this.updateEmail}> {this.state.email} dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd </p>
+                    <p onClick={this.updateEmail}> {this.state.email}</p>
                 )}
 			</div>
 		);

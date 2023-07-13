@@ -7,7 +7,7 @@ export default class Phone extends Component {
 
         this.state = {
             updating: false,
-            phone: "+337300203541"
+            phone: "Phone"
         }
 
         this.updatePhone = this.updatePhone.bind(this);
